@@ -4,7 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "bug": "cd public && vite ../",
+    "dev-bug-1": "cd public && vite ../",
+    "dev-bug-2": "cd .. && vite vite-plugin-typed-css-modules-bug",
+    "build-bug-1": "cd public && tsc -b ../ && vite build ../",
+    "build-bug-2": "cd .. && tsc -b vite-plugin-typed-css-modules-bug && vite build vite-plugin-typed-css-modules-bug",
+
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

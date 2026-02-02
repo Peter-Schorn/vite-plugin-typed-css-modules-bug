@@ -6,6 +6,8 @@ import typedCssModules from "vite-plugin-typed-css-modules";
 export default defineConfig({
     plugins: [
         react(),
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore: duplicate dependencies from local package
         typedCssModules({
             verbose: true,
             include: [
